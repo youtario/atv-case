@@ -1,0 +1,72 @@
+<meta charset="UTF-8">
+<script>
+    /*
+    PROBLEMA: INVESTIGAÇÃO CRIMINAL
+    Faça um script que faça 5 perguntas para uma pessoa sobre um crime. As perguntas são:
+    - "Telefonou para a vítima?"
+    - "Esteve no local do crime?"
+    - "Mora perto da vítima?"
+    - "Devia para a vítima?"
+    - "Já trabalhou com a vítima?"
+    O script deve no final emitir uma classificação sobre a participação da pessoa no crime. Se a pessoa responder positivamente a 2 questões ela deve ser classificada como "Suspeita", entre 3 e 4 como "Cúmplice" e 5 como "Assassino". Caso contrário, ele será classificado como "Inocente".
+    */
+
+    //ENTRADA
+    const telefone = prompt("Telefonou para a vítima?").toUpperCase().trim();
+    const local = prompt("Esteve no local do crime?").toUpperCase().trim();
+    const semTeto = prompt("Mora perto da vítima?").toUpperCase().trim();
+    const caloteiro = prompt("Devia para a vítima?").toUpperCase().trim();
+    const clt = prompt("Já trabalhou com a vítima?").toUpperCase().trim();
+    let suspeita = 0;
+
+    //PROCESSAMENTO
+    switch (telefone) {
+        case "SIM":
+            suspeita = suspeita + 1
+    };
+    switch (local) {
+        case "SIM":
+            suspeita = suspeita + 1
+    };
+    switch (semTeto) {
+        case "SIM":
+            suspeita = suspeita + 1
+    };
+    switch (caloteiro) {
+        case "SIM":
+            suspeita = suspeita + 1
+    };
+    switch (clt) {
+        case "SIM":
+            suspeita = suspeita + 1
+    };
+
+    //SAÍDA
+    switch (suspeita) {
+        case 0:
+            alert("Você é inocente.");
+            break;
+
+        case 1:
+            alert("Você é inocente.");
+            break;
+
+        case 2:
+            alert("Você é suspeito.");
+            break;
+
+        case 3:
+            break;
+            alert("Você é cúmplice.");
+            break;
+
+        case 4:
+            alert("Você é cúmplice.");
+            break;
+
+        case 5:
+            alert("Você é o assassino.");
+            break;
+    };
+
+</script>

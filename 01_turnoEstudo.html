@@ -1,0 +1,35 @@
+<meta charset="UTF-8">
+<script>
+    /*
+    PROBLEMA: CUMPRIMENTAR DE ACORDO COM O TURNO
+    Faça um script que pergunte em que turno você estuda.
+    Peça para digitar M-matutino ou V-Vespertino ou N- Noturno.
+    Imprima a mensagem
+    - "Bom Dia!"
+    - "Boa Tarde!" ou
+    - "Boa Noite!" ou
+    - "Valor Inválido!"
+    conforme o caso.
+    */
+
+    //ENTRADA
+    const turno = prompt("Informe em que turno estuda. (M-matutino V-Vespertino N-Noturno)").toUpperCase().trim();
+
+    //PROCESSAMENTO
+
+    //SAÍDA
+    switch (turno) {
+        case "M":
+            alert(`Bom Dia!`)
+            break;
+        case "V":
+            alert(`Bom Tarde!`)
+            break;
+        case "N":
+            alert(`Boa Noite!`)
+            break;
+        default:
+            alert(`valor Inválido!`)
+    };
+
+</script>
